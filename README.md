@@ -1,5 +1,5 @@
 # ppx_regex
-OCaml syntax extension for matching with regular expressions
+OCaml ppx rewriter for matching with regular expressions
 
 `ppx_regex` adds support for regular expresssions in pattern matchings.
 Currently it is in a very early state and by no means ready to be used.
