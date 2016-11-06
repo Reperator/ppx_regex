@@ -1,5 +1,5 @@
 # OASIS_START
-# DO NOT EDIT (digest: 3f3a2ae959e6ede7eadaf7ff65a18e5f)
+# DO NOT EDIT (digest: ac84cfbf529151f1db037b6e87060c31)
 # Ignore VCS directories, you can use the same kind of rule outside
 # OASIS_START/STOP if you want to exclude directories that contains
 # useless stuff for the build process
@@ -15,12 +15,12 @@ true: annot, bin_annot
 "_darcs": -traverse
 "_darcs": not_hygienic
 # Executable ppx_regex
-<lib/ppx_regex.{native,byte}>: pkg_compiler-libs.common
-<lib/ppx_regex.{native,byte}>: pkg_ppx_core
-<lib/ppx_regex.{native,byte}>: pkg_ppx_tools.metaquot
-<lib/ppx_regex.{native,byte}>: pkg_re.str
-<lib/*.ml{,i,y}>: pkg_compiler-libs.common
-<lib/*.ml{,i,y}>: pkg_ppx_core
-<lib/*.ml{,i,y}>: pkg_ppx_tools.metaquot
-<lib/*.ml{,i,y}>: pkg_re.str
+<lib/ppx_regex.{native,byte}>: package(compiler-libs.common)
+<lib/ppx_regex.{native,byte}>: package(ppx_core)
+<lib/ppx_regex.{native,byte}>: package(ppx_tools.metaquot)
+<lib/ppx_regex.{native,byte}>: package(re.str)
+<lib/*.ml{,i,y}>: package(compiler-libs.common)
+<lib/*.ml{,i,y}>: package(ppx_core)
+<lib/*.ml{,i,y}>: package(ppx_tools.metaquot)
+<lib/*.ml{,i,y}>: package(re.str)
 # OASIS_STOP
