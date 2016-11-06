@@ -1,0 +1,6 @@
+PKG ppx_tools.metaquot
+PKG ppx_core
+PKG re.str
+
+B _build/src
+S src

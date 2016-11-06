@@ -1,0 +1,26 @@
+OASISFormat: 0.4
+BuildTools: ocamlbuild
+Plugins: META (0.4), DevFiles (0.4)
+Name: ppx_regex
+Version: 0.1
+OCamlVersion: >= 4.03.0
+Synopsis: OCaml ppx rewriter for matching with regular expressions
+Authors: Fabian Bonk <fabian.bonk@bonkii.com>
+License: LGPL
+LicenseFile: LICENSE
+FilesAB: lib/META.ab
+Description:
+  OCaml ppx rewriter to allow regular expressions in pattern matchings
+
+PreInstallCommand: $ocamlfind install ppx_regex lib/META
+PreUninstallCommand: $ocamlfind remove ppx_regex
+
+Executable ppx_regex
+  Path: lib
+  MainIs: ppx_regex.ml
+  CompiledObject: best
+  BuildDepends:
+    re.str,
+    ppx_core,
+    compiler-libs.common,
+    ppx_tools.metaquot

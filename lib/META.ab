@@ -1,0 +1,4 @@
+version = "$(pkg_version)"
+description = "Preprocessor for matching with regular expressions"
+requires = "re.str compiler-libs.common ppx_core ppx_tools.metaquot"
+ppx = "ppx_regex"
