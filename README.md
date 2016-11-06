@@ -10,6 +10,11 @@ Installation:
 $ opam pin add ppx_regex https://github.com/Reperator/ppx_regex.git
 ```
 
+Uninstall:
+```
+$ opam pin remove ppx_regex
+```
+
 Usage:
 ```ocaml
 # #require "ppx_regex";;
