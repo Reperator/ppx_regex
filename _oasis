@@ -24,3 +24,10 @@ Executable ppx_regex
     ppx_core,
     compiler-libs.common,
     ppx_tools.metaquot
+
+Executable test
+  Path: lib
+  MainIs: test.ml
+  BuildDepends:
+    threads,
+    core
