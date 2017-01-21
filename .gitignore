@@ -1,8 +1,11 @@
 _build
+_tags
 *.native
 *.byte
 setup.log
 setup.data
+setup.ml
 lib/META
 script.ml
 test
+myocamlbuild.ml
